@@ -1,0 +1,13 @@
+/*General Styles*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+}
