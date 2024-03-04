@@ -107,4 +107,20 @@
   .right-aside {
     width: 100%;
   }
+
+  .charge-text {
+    font-size: 12px;
+    text-align: right;
+    margin-left: 250px;
+    margin-right: 20px;
+  }
+
+  .little-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: right;
+    margin-left: 250px;
+    margin-right: 20px;
+    font-size: 8px;
+  }
 }
