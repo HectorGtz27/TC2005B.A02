@@ -11,7 +11,15 @@
     />
     <meta name="author" content="Author's name" />
     <title>Steve & Kate's Camp (HectorGtz)</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/charge.css" />
+    <link rel="stylesheet" href="styles/locations.css" />
+    <link rel="stylesheet" href="styles/table.css" />
+    <link rel="stylesheet" href="styles/testimonials.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16" />
     <link
       rel="stylesheet"
@@ -21,45 +29,59 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <img src="images/logo.png" alt="Steve & Kate's Camp Logo" />
-      <nav>
+      <nav class="sections-container">
         <ul>
-          <a href="#home">Home</a>
-          <a href="#locations">Locations</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#contact">Contact Us</a>
+          <a href="#home">HOME</a>
+          <a href="#locations">LOCATIONS</a>
+          <a href="#testimonials">TESTIMONIALS</a>
+          <a href="#contact">CONTACT US</a>
         </ul>
       </nav>
       <button>LOG IN</button>
     </header>
 
     <main>
-      <img id="home" src="images/hero.png" alt="Hero image" />
+      <img
+        class="hero-background"
+        id="home"
+        src="images/hero.png"
+        alt="Hero image"
+      />
 
-      <section>
-        <article>
+      <section class="charge-section">
+        <article class="left-article">
           <h2>Here, we put kids in charge.</h2>
           <h3>Preposterous? Possibly.</h3>
           <h3>Effective? You betcha.</h3>
-          <p>
-            When you trust kids, they trust themselves. For 44 years, we’ve put
-            kids in charge of their own learning experience. They try, fail, and
-            learn on their own. They learn to trust their own judgment, and
-            tackle the challenges of an ever changing world with creativity and
-            confidence.
-          </p>
-          <p>
-            Campers choose minute to minute from a variety of activities
-            including, sewing, stop-motion animation, music, sports &
-            recreation, makers crafts, bread making, and more. They’ll decide
-            what they want to do, and for how long. Our job is to get out of
-            their way, cheerlead creative risks, and provide just enough
-            guidance to make sure nobody does anything totally* asinine.
-          </p>
-          <p>
+          <div class="charge-text">
+            <p class="first-parragraph">
+              When you trust kids, they trust themselves. For 44 years, we’ve
+              put kids in charge of their own learning experience. They try,
+              fail, and learn on their own. They learn to trust their own
+              judgment, and tackle the challenges of an ever changing world with
+              creativity and confidence.
+            </p>
+            <p>
+              Campers choose minute to minute from a variety of activities
+              including, sewing, stop-motion animation, music, sports &
+              recreation, makers crafts, bread making, and more. They’ll decide
+              what they want to do, and for how long. Our job is to get out of
+              their way, cheerlead creative risks, and provide just enough
+              guidance to make sure nobody does anything totally* asinine.
+            </p>
+          </div>
+
+          <p class="little-text">
             <i>
               *Totally asinine: By our definition, mistakes aren’t asinine.
               They’re how you learn.</i
@@ -67,8 +89,12 @@
           </p>
         </article>
 
-        <aside>
-          <img src="images/holiday.png" alt="Holiday image" />
+        <aside class="right-aside">
+          <img
+            class="little-kid-image"
+            src="images/holiday.png"
+            alt="Holiday image"
+          />
           <h3>HOLIDAY CAMPS</h3>
           <p>
             Camp shouldn’t have an off-season. Find your local camp for fall,
@@ -79,129 +105,151 @@
         </aside>
       </section>
 
-      <section id="locations">
-        <!--Reminder: when the background is an image the imaga/photo needs to be imported from the styles not from the HTML -->
-        <div>
-          <img src="images/locations.png" alt="Location image" />
+      <section
+        class="locations-section"
+        id="locations"
+        style="background-image: url(images/locations.png)"
+      >
+        <div class="front-text">
           <h1>70+ Locations—Probably Near You</h1>
           <h3>Select a location to learn more about our camps</h3>
         </div>
-        <table border="1" cellspacing="0" cellpadding="10">
+      </section>
+
+      <section class="table-section">
+        <table>
           <tr>
-            <th align="center">STATE</th>
-            <th align="center">CITY</th>
-            <th align="center">TYPE OF CAMP</th>
-            <th align="center">AVAILABILITY</th>
+            <th>STATE</th>
+            <th>CITY</th>
+            <th>TYPE OF CAMP</th>
+            <th>AVAILABILITY</th>
           </tr>
           <tr>
             <td>Alabama</td>
-            <td>Alexander City</td>
+            <td style="text-decoration-line: underline">Alexander City</td>
             <td>Summer Camp</td>
-            <td align="center">✅</td>
+            <td><span class="checkmark">✔</span></td>
           </tr>
           <tr>
             <td>Alabama</td>
-            <td>Dothan</td>
+            <td style="text-decoration-line: underline">Dothan</td>
             <td>Holiday Camp</td>
-            <td align="center">❌</td>
+            <td><span class="cross">✘</span></td>
           </tr>
           <tr>
             <td>Alaska</td>
-            <td>Anchorage</td>
+            <td style="text-decoration-line: underline">Anchorage</td>
             <td>Sports Camp</td>
-            <td align="center">❌</td>
+            <td><span class="cross">✘</span></td>
           </tr>
           <tr>
             <td>Arizona</td>
-            <td>Nogales</td>
+            <td style="text-decoration-line: underline">Nogales</td>
             <td>Holiday Camp</td>
-            <td align="center">✅</td>
+            <td><span class="checkmark">✔</span></td>
           </tr>
           <tr>
             <td>Arizona</td>
-            <td>Scottsdale</td>
+            <td style="text-decoration-line: underline">Scottsdale</td>
             <td>Sports Camp</td>
-            <td align="center">✅</td>
+            <td><span class="checkmark">✔</span></td>
           </tr>
           <tr>
-            <td>Arkansas</td>
-            <td>Conway</td>
+            <td>Arizona</td>
+            <td style="text-decoration-line: underline">Conway</td>
             <td>Holiday Camp</td>
-            <td align="center">✅</td>
+            <td><span class="checkmark">✔</span></td>
           </tr>
           <tr>
             <td>Arkansas</td>
-            <td>El Dorado</td>
+            <td style="text-decoration-line: underline">El Dorado</td>
             <td>Sports Camp</td>
-            <td align="center">❌</td>
+            <td><span class="cross">✘</span></td>
           </tr>
           <tr>
-            <td>California</td>
-            <td>Beverly Hills</td>
+            <td>Arkansas</td>
+            <td style="text-decoration-line: underline">Beverly Hills</td>
             <td>Summer Camp</td>
-            <td align="center">✅</td>
+            <td><span class="checkmark">✔</span></td>
           </tr>
         </table>
       </section>
 
-      <section id="testimonials">
-        <!--Reminder: when the background is an image the imaga/photo needs to be imported from the styles not from the HTML -->
-        <!--The testimonials text is going to be inside the div that contains the kid image, so the text can be positioned based on the image not on the whole container -->
-        <div>
-          <img src="images/kid.png" alt="Kid Image" />
-          <h1>Testimonials</h1>
-          <p>
+      <section class="testimonials-section">
+        <div
+          class="testimonials-background"
+          style="background-image: url(images/kid.png)"
+        >
+          <div class="testimonial-title">Testimonials</div>
+          <div class="testimonial-description">
             Learn where your website traffic is coming from, what your visitors
             are looking for, and how they’re interacting with your content or
             products through our in-depth Analytics tools.
-          </p>
+          </div>
         </div>
-
-        <article>
-          <figure>
-            <img src="images/mayra.png" alt="Portrait of Mayra Dutch" />
-            <figcaption>Mayra Dutch</figcaption>
-            <figcaption>AIR FLOW</figcaption>
-          </figure>
-          <blockquote>
-            “The best solution in the market to solve any problem you may have.”
-          </blockquote>
-        </article>
-
-        <article>
-          <figure>
-            <img src="images/anne.png" alt="Portrait of Anne Donovan" />
-            <figcaption>Anne Donovan</figcaption>
-            <figcaption>AIR FLOW</figcaption>
-          </figure>
-          <blockquote>
-            “The best solution in the market to solve any problem you may have.”
-          </blockquote>
-        </article>
-
-        <article>
-          <figure>
-            <img src="images/aaron.png" alt="Portrait of Aaron Smith" />
-            <figcaption>Aaron Smith</figcaption>
-            <figcaption>AIR FLOW</figcaption>
-          </figure>
-          <blockquote>
-            “The best solution in the market to solve any problem you may have.”
-          </blockquote>
-        </article>
-        <!--Reminder: when the background is an image the imaga/photo needs to be imported from the styles not from the HTML -->
-        <!--Now we add here the image because is in between the articles, because the articles are going to moved in respect to the WHOLE container including this image and the image about the kid -->
-        <div>
-          <img src="images/blue.png" alt="Blue Image" />
+        <div class="testimonial-container">
+          <!-- Testimonial 1 -->
+          <div
+            class="testimonial"
+            style="border: 2px solid rgba(32, 221, 28, 0.27)"
+          >
+            <div class="column1">
+              <img src="/images/Natalie-P-7.webp" alt="Mayra Dutch" />
+              <div class="author-information">
+                <p class="testimonial-author">Mayra Dutch</p>
+                <p class="testimonial-company">AIR FLOW</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "The best solution in the market to solve any problem you may
+              have."
+            </p>
+          </div>
+          <!-- Testimonial 2 -->
+          <div
+            class="testimonial"
+            style="border: 2px solid rgba(231, 233, 145, 1)"
+          >
+            <div class="column1">
+              <img src="/images/Paige-e1683134679209.webp" alt="Mayra Dutch" />
+              <div class="author-information">
+                <p class="testimonial-author">Anne Donovan</p>
+                <p class="testimonial-company">AIR FLOW</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "The best solution in the market to solve any problem you may
+              have."
+            </p>
+          </div>
+          <!-- Testimonial 3 -->
+          <div
+            class="testimonial"
+            style="border: 2px solid rgba(248, 132, 132, 1)"
+          >
+            <div class="column1">
+              <img src="/images/SAP_17_WB-min.jpg" alt="Aaron Smith" />
+              <div class="author-information">
+                <p class="testimonial-author">Aaron Smith</p>
+                <p class="testimonial-company">AIR FLOW</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "The best solution in the market to solve any problem you may
+              have."
+            </p>
+          </div>
         </div>
       </section>
 
-      <section>
+      <section class="contact-section">
         <!--Reminder: when the background is an image the imaga/photo needs to be imported from the styles not from the HTML -->
-        <div>
-          <img src="images/smile-kid.png" alt="Smile Kid" />
-        </div>
-        <form action="#" method="post">
+        <img
+          src="images/smile-kid.png"
+          alt="Contact Us"
+          class="contact-image"
+        />
+        <form class="contact-container" action="#" method="post">
           <h1>Contact Us</h1>
 
           <label for="email">EMAIL ADDRESS</label>
@@ -220,9 +268,9 @@
             required
           />
 
-          <div>
+          <div class="location-container">
             <label for="city">YOUR LOCATION</label>
-            <div>
+            <div class="row-inputs">
               <input type="text" id="city" placeholder="Your City" required />
               <input
                 type="text"
@@ -240,28 +288,28 @@
             required
           ></textarea>
 
-          <button type="submit">SEND MESSAGE</button>
+          <button class="send-button" type="submit">SEND MESSAGE</button>
         </form>
       </section>
     </main>
 
-    <footer id="contact">
-      <div>
-        <img src="images/logo2.png" alt="Logo2" />
+    <footer id="contact" class="footer-section">
+      <div class="left-footer">
+        <img src="images/logo3.png" alt="Logo2" />
         <p>58 West Portal Ave #800</p>
         <p>San Francisco, CA 94127</p>
-        <div>
-          <i class="fab fa-facebook"></i>
+        <div class="icons-container">
+          <i class="fab fa-facebook" style="height: 40px; width: 40px"></i>
           <!-- Facebook icon -->
-          <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram" style="height: 40px; width: 40px"></i>
           <!-- Instagram icon -->
-          <i class="fab fa-youtube"></i>
+          <i class="fab fa-youtube" style="height: 40px; width: 40px"></i>
           <!-- YouTube icon -->
         </div>
       </div>
 
-      <div>
-        <div>
+      <div class="right-footer">
+        <div class="footer-content">
           <div>
             <h1>ABOUT S&K</h1>
             <p><a href="#">Philosophy</a></p>
@@ -292,7 +340,7 @@
             <p><a href="#">Camp Guidelines & Safety</a></p>
           </div>
         </div>
-        <p>Copyright © 2024. All Rights Reserved.</p>
+        <p class="litle-text">Copyright © 2024. All Rights Reserved.</p>
       </div>
     </footer>
   </body>

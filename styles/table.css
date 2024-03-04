@@ -1,0 +1,39 @@
+.table-section {
+  padding: 50px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+}
+table th {
+  background-color: #1c71a1;
+  color: white;
+}
+table tr:nth-child(odd) {
+  background-color: #d9d9d9;
+}
+table tr:hover {
+  background-color: #d9d9d9;
+}
+.checkmark {
+  color: green;
+}
+.cross {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .table-section {
+    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

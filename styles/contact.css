@@ -1,0 +1,138 @@
+/* Estilos base aplicados a todos los tamaños */
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.contact-image {
+  width: 50%;
+}
+
+.contact-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+
+  background-color: #cecece;
+}
+
+.contact-container h1 {
+  margin-top: 0;
+  text-align: left;
+  color: #f25757;
+  margin-bottom: 15px;
+}
+
+.contact-container label {
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.contact-container input {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 2px;
+  border: 1px solid black;
+  font-size: 10px;
+}
+
+.location-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row-inputs input {
+  width: 42%;
+}
+
+textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 2px;
+  border: 1px solid black;
+  padding-bottom: 100px;
+  font-size: 10px;
+}
+
+.send-button {
+  padding: 15px;
+  border-radius: 2px;
+  border: none;
+  background-color: #f25757;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Media query para tabletas */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-image,
+  .contact-container {
+    width: 100%;
+  }
+
+  .location-container,
+  .row-inputs {
+    flex-direction: column;
+  }
+
+  .row-inputs input {
+    width: 93%; /* Los inputs ahora toman el ancho completo */
+  }
+}
+
+/* Media query para dispositivos grandes, por ejemplo, pantallas de escritorio grandes */
+@media (min-width: 1200px) {
+  .contact-container {
+    padding: 80px; /* Más espacio en pantallas grandes */
+  }
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 480px) {
+  .contact-image {
+    display: none; /* Esconde la imagen en dispositivos móviles */
+  }
+
+  .contact-container {
+    padding: 20px; /* Menos padding en dispositivos móviles */
+  }
+
+  .contact-container h1,
+  .contact-container label,
+  .contact-container input,
+  .contact-container textarea,
+  .send-button {
+    font-size: 16px; /* Aumenta la legibilidad en dispositivos pequeños */
+  }
+
+  .row-inputs input {
+    margin-bottom: 10px; /* Añade espacio entre inputs cuando están apilados */
+  }
+}
+
+/* Reglas CSS para asegurarse de que la sección de contacto se ajusta a la ventana de visualización */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.contact-section {
+  min-height: 100vh; /* La sección de contacto toma al menos la altura de la ventana de visualización */
+}

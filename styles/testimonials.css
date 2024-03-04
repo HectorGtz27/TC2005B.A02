@@ -1,0 +1,121 @@
+.testimonials-section {
+  position: relative;
+  text-align: left; /* Centrar el texto del título y descripción */
+  color: white;
+  width: 100%;
+}
+.testimonials-background {
+  display: flex; /* Permite el uso de flexbox */
+  flex-direction: column; /* Organiza los hijos en una columna */
+  align-items: flex-start; /* Alinea los hijos a la izquierda */
+  justify-content: flex-start; /* Alinea los hijos al inicio (parte superior) */
+  background-size: cover;
+  background-position: center;
+  padding: 140px 40px 250px 40px; /* 50px-Mover texto mas arriba */
+}
+
+.testimonial-title {
+  font-size: 45px;
+  margin-bottom: 0.2em;
+  margin-left: 40px;
+}
+.testimonial-description {
+  font-size: 25px;
+  margin-bottom: 2em;
+  width: 550px;
+  margin-left: 40px;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Asegura que los testimonios se ajusten en pantallas más pequeñas */
+  background-color: #1c71a1; /* Fondo azul para la sección de testimonios */
+  padding: 20px;
+  padding-bottom: 150px; /* Añade espacio en la parte inferior para el texto */
+}
+.testimonial {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 230px; /* Ajusta el ancho según sea necesario */
+  position: relative; /* Para el efecto de superposición */
+  margin-top: -140px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  height: 160px; /* Ajusta la altura según sea necesario */
+
+  display: flex; /* Permite el uso de flexbox */
+  flex-direction: column; /* Organiza los hijos en una columna */
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Para hacer que la imagen sea redonda */
+  object-fit: cover;
+}
+
+.testimonial-text {
+  color: black;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.testimonial-author {
+  color: black;
+}
+
+.testimonial-company {
+  color: black;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.author-information {
+  margin-left: 20px;
+}
+
+@media (max-width: 780px) {
+  .testimonials-background {
+    padding: 50px 20px; /* Reduce aún más el padding para subir los testimonios */
+  }
+
+  .testimonial-container {
+    margin-top: -40px; /* Aplica un margen negativo para subir el contenedor de testimonios */
+    justify-content: center;
+  }
+
+  .testimonial {
+    margin: 20px;
+  }
+
+  .testimonial-title {
+    font-size: 35px;
+  }
+
+  .testimonial-description {
+    font-size: 20px;
+    width: 100%; /* Ajusta el ancho al 100% para evitar desbordamientos */
+    max-width: 400px; /* Mantiene el ancho máximo a 400px */
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+  }
+
+  .testimonial-text,
+  .testimonial-author,
+  .testimonial-company {
+    font-size: 10px;
+  }
+
+  .testimonial img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: -15px; /* Ajusta el margen inferior de la imagen si es necesario */
+  }
+}

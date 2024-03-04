@@ -1,0 +1,29 @@
+.locations-section {
+  position: relative;
+  height: 500px; /* Ajusta la altura según sea necesario */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start; /* Alinea el contenido verticalmente al inicio (arriba) */
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  padding-left: 50px; /* Espacio desde el borde izquierdo */
+  padding-top: 100px; /* Espacio desde el borde superior */
+  width: 100%; /* Ancho ajustado al 100% del viewport */
+  overflow: hidden;
+}
+
+.front-text {
+  text-align: left; /* Alinea el texto a la izquierda */
+  color: black; /* Ajusta el color del texto según sea necesario */
+  z-index: 2; /* Asegura que el texto esté sobre la imagen de fondo */
+}
+
+.front-text h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5em; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.front-text h3 {
+  margin: 0;
+  font-size: 1.5em; /* Ajusta el tamaño del texto según sea necesario */
+}
